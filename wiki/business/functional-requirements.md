@@ -22,7 +22,7 @@
  - Provider may register their profile 
 
 **UC-3: My Account Page:**
-- Customer may observe and change his personal data
+- Customer/Provider may observe and change their personal data
 - Customer may observe order history
 - Customer may add payment method
 - Provider may observe list of created events
