@@ -1,17 +1,22 @@
 # Functional Requirements
 
+## Business Goals  
+
+Create a new system for displaying events and selling tickets for them. 
+The system should handle many users and be stable during an influx of users (f.e, when a lot of people want to buy tickets for some rare event).
+
 ## Stakeholders
 
 **SH-1: Event Provider:**    
  - Events organizer
- - A company or person that provides events and sells tickets for them  
+ - A company or person that provides events and sells tickets for them
 
 **SH-2: Event Customer:**  
  - A person who attend events and buy tickets for them
 
 **SH-3**: Manager:  
  - A person who check and change events info
- - Can block/unblock users
+ - Block/unblock users
 
 ## UseCases
 
@@ -21,7 +26,7 @@
 **UC-2: Provider registration:**  
  - Provider may register their profile 
 
-**UC-3: My Account Page:**
+**UC-3: My account:**
 - Customer/Provider may observe and change their personal data
 - Customer may observe order history
 - Customer may add payment method
