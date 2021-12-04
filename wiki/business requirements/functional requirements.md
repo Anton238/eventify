@@ -14,7 +14,7 @@ The system should handle many users and be stable during an influx of users (f.e
 **SH-2: Event Customer:**  
  - A person who attend events and buy tickets for them
 
-**SH-3**: Manager:  
+**SH-3: Manager:**  
  - A person who check and change events info
  - Block/unblock users
 
