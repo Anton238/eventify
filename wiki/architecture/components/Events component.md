@@ -26,8 +26,11 @@ These characteristics are achieved in the following way:
    Also, the application can be deployed in several regions to ensure availability.
 
 2. **Asynchronous communications**  
-   By using asynchronous events in Kafka, we can achieve  eventual consistency.
+   By using asynchronous events in Kafka, we can achieve high throughput with eventual consistency.
  
+3. **Project Reactor**  
+   Project Reactor is a part of Spring Framework which allows for better resource utilization and higher throughput.
+
 ### Integrations:
 - **Synchronous API**  
   HTTP REST requests should be used for read operations
