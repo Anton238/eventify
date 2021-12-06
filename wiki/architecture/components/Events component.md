@@ -2,15 +2,16 @@
 
 ## Description
 
-Events component is the main component of the system.   
-Responsible for creating, storing, changing events.
+Events component is the major component of the system.   
+Responsible for creating, storing, changing Events.
 
 ### Component structure
 - API layer: **Events service**
 - Storage layer: **MongoDB**
+- Cache layer: **Redis**
 
 ## Events service
-Events service provides API for CRUD operations with events.  
+Events service provides API for CRUD operations with Events.  
 Tech stack: Java, Spring Boot, Project Reactor.
 
 ### Non-functional requirements:
@@ -19,16 +20,27 @@ Tech stack: Java, Spring Boot, Project Reactor.
 - High Throughput
 - Eventual consistency
 
+These characteristics are achieved in the following way:
+1. **Stateless app**  
+   Each request can be processed by any instance of the application, so we can evenly distribute the load and scale the application.  
+   Also, the application can be deployed in several regions to ensure availability.
+
+2. **Asynchronous communications**  
+   By using asynchronous events in Kafka, we can achieve  eventual consistency.
+ 
 ### Integrations:
-- CRUD Synchronous API  
-  HTTP REST requests
-- CRUD Async API  
-  Consuming events from Kafka topic
-- Async Notifications  
+- **Synchronous API**  
+  HTTP REST requests should be used for read operations
+- **Asynchronous API**  
+  Kafka events should be used for create/update/delete operations
+- **Async Notifications**  
   Produce events to Kafka topic every time any Event was changed
 
 ### Security
 //TODO ... something about JWT
 
 The correctness of the request will be checked based on the specified rights.  
-For example, if request is sent to delete an event on behalf of a customer, it won't be processed and will return an error.
+For example, if request is sent to delete an Event on behalf of a customer, it won't be processed and will return an error.
+
+### Caching  
+We predict that the most frequent operation is viewing events. The most viewed Events should be cached for faster access.
