@@ -1,18 +1,15 @@
-# Events component
+# Events service
 
 ## Description
 
-Events component is the major component of the system.   
-Responsible for creating, storing, changing Events.
+Events service is the major component of the system.   
+Responsible for creating, storing, changing Events and provides API for CRUD operations.
 
 ### Component structure
-- API layer: **Events service**
+- API layer: **Events service**  
+  Tech stack: Java, Spring Boot, Project Reactor.
 - Storage layer: **MongoDB**
 - Cache layer: **Redis**
-
-## Events service
-Events service provides API for CRUD operations with Events.  
-Tech stack: Java, Spring Boot, Project Reactor.
 
 ### Non-functional requirements:
 - High Availability
