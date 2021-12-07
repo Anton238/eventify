@@ -3,7 +3,7 @@
 ## Description
 
 Events service is the major component of the system.   
-Responsible for creating, storing, changing Events and provides API for CRUD operations.
+It is responsible for creating, storing, changing Events and provides API for CRUD operations with them.
 
 ### Component structure
 - API layer: **Events service**  
