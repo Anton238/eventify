@@ -2,7 +2,7 @@
 
 ## Description
 
-Orders service is a service responsible for purchasing tickets, storing order history, managing order processes. 
+Orders service is a service responsible for purchasing tickets, managing order processes. 
 It provides API for creating an order and uses workflow pattern to manage order process.
 
 ### Component structure
