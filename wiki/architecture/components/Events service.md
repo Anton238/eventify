@@ -30,9 +30,9 @@ These characteristics are achieved in the following way:
 
 ### Integrations:
 - **Synchronous API**  
-  HTTP REST requests should be used for read operations
+  Consumes HTTP REST requests for read operations
 - **Asynchronous API**  
-  Kafka events should be used for create/update/delete operations
+  Consumes Kafka events for create/update/delete operations
 - **Async Notifications**  
   Produce events to Kafka topic every time any Event was changed
 
