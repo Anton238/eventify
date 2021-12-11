@@ -13,6 +13,7 @@ It provides API for creating and updating user data.
 ### Non-functional requirements:
 - High Availability
 - High Scalability
+- High Elasticity
 
 ### Integrations:
 - **Synchronous API**  

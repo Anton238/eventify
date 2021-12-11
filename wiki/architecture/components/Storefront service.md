@@ -13,6 +13,7 @@ It receives requests from front-end, send requests to another services, aggregat
 ### Non-functional requirements:
 - High Availability
 - High Scalability
+- High Elasticity
 - High Throughput
 
 ### Integrations:

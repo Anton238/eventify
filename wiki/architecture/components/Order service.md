@@ -21,6 +21,7 @@ Service:
 ### Non-functional requirements:
 - High Availability
 - High Scalability
+- High Elasticity
 - Eventual consistency
 
 ### Integrations:

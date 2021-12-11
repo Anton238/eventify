@@ -11,6 +11,7 @@ This service responsible for storing credentials and rights, providing topics.
 ### Non-functional requirements:
 - High Availability
 - High Scalability
+- High Elasticity
 
 ### Integrations:
 - **Synchronous API**  

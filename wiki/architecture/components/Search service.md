@@ -13,6 +13,7 @@ It consumes events from Kafka and update stored data based on that events. Then,
 ### Non-functional requirements:
 - High Availability
 - High Scalability
+- High Elasticity
 - High Throughput
 
 ### Integrations:

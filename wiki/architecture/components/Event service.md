@@ -14,6 +14,7 @@ It is responsible for creating, storing, changing Events and provides API for CR
 ### Non-functional requirements:
 - High Availability
 - High Scalability
+- High Elasticity
 - High Throughput
 - Eventual consistency
 
