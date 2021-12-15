@@ -4,7 +4,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.eventify.events'
+group = 'com.eventify.wale'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
