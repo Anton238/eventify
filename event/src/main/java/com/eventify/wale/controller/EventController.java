@@ -3,10 +3,8 @@ package com.eventify.wale.controller;
 import com.eventify.wale.dto.EventDTO;
 import com.eventify.wale.event.facades.EventFacade;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController()
 @RequestMapping("/api/event")
@@ -18,5 +16,10 @@ public class EventController {
     @PostMapping("/create")
     public EventDTO createEvent(@RequestBody EventDTO dto) {
         return eventFacade.createEvent(dto);
+    }
+
+    @GetMapping("/get/{uid}")
+    public ResponseEntity<EventDTO> getEvent(@PathVariable String uid) {
+        return ResponseEntity.of(eventFacade.getEvent(uid));
     }
 }

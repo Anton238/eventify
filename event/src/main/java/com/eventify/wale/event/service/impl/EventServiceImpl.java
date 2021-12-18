@@ -9,6 +9,8 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @AllArgsConstructor
 @Slf4j
@@ -25,5 +27,10 @@ public class EventServiceImpl implements EventService {
         log.info("Created new event with uid {}", event.getUid());
 
         return event;
+    }
+
+    @Override
+    public Optional<EventEntity> getEvent(String uid) {
+        return eventRepository.findById(uid);
     }
 }
